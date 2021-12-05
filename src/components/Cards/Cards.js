@@ -17,6 +17,7 @@ function Cards() {
 
     }, []);
 
+    console.log(people)
     const onSwipe = (direction) => {
         console.log('You swiped: ' + direction)
     }
@@ -35,7 +36,7 @@ function Cards() {
                         onSwipe={(dir) => onSwipe(dir, person.name)}
                         onCardLeftScreen={() => onCardLeftScreen(person.name)}
                     >
-                        <div style={{ backgroundImage: `url(${person.url})` }} className={styles.card}>
+                        <div style={{ backgroundImage: `url(${person.img_url})` }} className={styles.card}>
                             <h3>{person.name}</h3>
                         </div>
                     </TinderCard>
