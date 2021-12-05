@@ -1,12 +1,15 @@
 
 .cards{
     width: 100%;
+    position: relative;
+    width: 100%;
 }
 
 .cardContainer{
     display: flex;
     justify-content: center;
     margin-top: 10vh;
+    position: relative;
 }
 
 .card{
